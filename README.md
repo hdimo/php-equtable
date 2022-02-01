@@ -47,5 +47,5 @@ $user2 = (new User())
     ->setId(111);
 
 var_dump($user1 === $user2); // false
-var_dump($user1->equalTo($user2)); // false 
+var_dump($user1->equalTo($user2)); // true 
 ```

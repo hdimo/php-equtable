@@ -1,0 +1,19 @@
+{
+  "name": "jk/equatable",
+  "description": "interface to compare object based on properties",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Jk\\Equatable\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "khaled",
+      "email": "khaled.hadj.a@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}

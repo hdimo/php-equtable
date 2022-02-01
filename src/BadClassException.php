@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Jk\Equatable;
+namespace Jkhaled\Equatable;
 
 
 class BadClassException extends \Exception

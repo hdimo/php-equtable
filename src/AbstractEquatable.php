@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Jk\Equatable;
+namespace Jkhaled\Equatable;
 
 
 abstract class AbstractEquatable implements EquatableInterface
@@ -11,7 +11,7 @@ abstract class AbstractEquatable implements EquatableInterface
     /**
      * @param $object
      * @return bool
-     * @throws PropertyNotExistException
+     * @throws PropertyNotExistException|BadClassException
      */
     public function equalTo(EquatableInterface $object): bool
     {

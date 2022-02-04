@@ -1,13 +1,14 @@
-Equatable for object comparison in PHP.
+Equatable interface for object comparison in PHP.
 
-Interface for object comparison, We reach a limitation in PHP when we want to compare objects in such a way that == yields incorrect results. 
+when we want to compare objects in such a way that == yields incorrect results. 
 We often overcome this limitation by implementing a method like equals($other) encapsulating our specialized behaviour. 
 This library provides an interface for this.
 
 Installation
-composer require jkhaled/equatable
-License
 
+```shell script
+composer require jkhaled/equatable 
+```
 
 usage example : 
 
@@ -42,8 +43,8 @@ class User extends \Jk\Equatable\AbstractEquatable
         return $this;
     }
 
-
-    public function getProperties(): array // the properties to be compared 
+    // the properties to be compared to check equality
+    public function getProperties(): array 
     {
         return ['id', 'firstname'];
     }

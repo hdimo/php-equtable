@@ -5,7 +5,8 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Jkhaled\\Equatable\\": "src"
+      "Jkhaled\\Equatable\\": "src",
+      "Jkhaled\\Equatable\\Test\\": "tests"
     }
   },
   "authors": [
@@ -15,5 +16,8 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {}
+  "require-dev": {
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "9.5.x-dev"
+  }
 }

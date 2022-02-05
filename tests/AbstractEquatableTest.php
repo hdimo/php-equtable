@@ -37,9 +37,9 @@ class AbstractEquatableTest extends TestCase
 
         $obj2 = (new SimpleObject())
             ->setId($testId)
-            ->setTitle($title);
+            ->setTitle('diff title');
 
-        $this->assertTrue($obj1->equalTo($obj2));
+        $this->assertFalse($obj1->equalTo($obj2));
         $this->assertFalse($obj1 === $obj2);
     }
 

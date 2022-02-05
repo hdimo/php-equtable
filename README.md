@@ -15,7 +15,7 @@ usage example :
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-class User extends \Jk\Equatable\AbstractEquatable
+class User extends \Jkhaled\Equatable\AbstractEquatable
 {
     private $id;
     private $firstname;

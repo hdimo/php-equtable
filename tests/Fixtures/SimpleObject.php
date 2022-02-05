@@ -47,6 +47,6 @@ class SimpleObject extends AbstractEquatable
 
     public function getProperties(): array
     {
-        return ['id', 'username'];
+        return ['id', 'title'];
     }
 }

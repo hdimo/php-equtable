@@ -16,7 +16,10 @@
     }
   ],
   "minimum-stability": "dev",
-  "post-update-cmd": "composer run-script test",
+  "scripts": {
+    "test": "phpunit tests"
+  },
+
   "require-dev": {
     "phpunit/phpunit": "9.5.x-dev"
   }

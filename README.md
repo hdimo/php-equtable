@@ -1,8 +1,9 @@
-Equatable interface for object comparison in PHP.
+[![PHP Composer](https://github.com/hdimo/php-equtable/actions/workflows/php.yml/badge.svg)](https://github.com/hdimo/php-equtable/actions/workflows/php.yml)
 
-when we want to compare objects in such a way that == yields incorrect results. 
-We often overcome this limitation by implementing a method like equals($other) encapsulating our specialized behaviour. 
-This library provides an interface for this.
+An equatable interface for object comparison in PHP.
+
+when we want to compare objects in php with == yields incorrect results even if they are equal in all properties.
+this library provides an interface to compare two objects by returning their properties and checks if they are equal.
 
 Installation
 

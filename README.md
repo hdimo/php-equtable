@@ -1,4 +1,4 @@
-[![PHP Composer](https://github.com/hdimo/php-equtable/actions/workflows/php.yml/badge.svg)](https://github.com/hdimo/php-equtable/actions/workflows/php.yml)
+[![PHP UNIT](https://github.com/hdimo/php-equtable/actions/workflows/php.yml/badge.svg)](https://github.com/hdimo/php-equtable/actions/workflows/php.yml)
 
 An equatable interface for object comparison in PHP.
 

@@ -6,7 +6,9 @@ namespace Jkhaled\Equatable\Test;
 
 use Jkhaled\Equatable\AbstractEquatable;
 use Jkhaled\Equatable\BadClassException;
+use Jkhaled\Equatable\PropertyNotExistException;
 use Jkhaled\Equatable\Test\Fixtures\SimpleObject;
+use Jkhaled\Equatable\Test\Fixtures\SimpleObject2;
 use PHPUnit\Framework\TestCase;
 
 class AbstractEquatableTest extends TestCase
@@ -71,5 +73,13 @@ class AbstractEquatableTest extends TestCase
 
         $obj1->equalTo($obj2);
 
+    }
+
+    public function testThrowsProprtyNotExistException()
+    {
+        $o1 = new SimpleObject2('123', 'test');
+        $o2 = new SimpleObject2('123', 'test');
+        $this->expectException(PropertyNotExistException::class);
+        $o1->equalTo($o2);
     }
 }
